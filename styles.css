@@ -200,10 +200,10 @@ p {
   color: var(--navy-primary);
 }
 
-.dark-mode .icon-sun { display: inline; }
+.dark-mode .icon-sun { display: block; }
 .dark-mode .icon-moon { display: none; }
 .light-mode .icon-sun { display: none; }
-.light-mode .icon-moon { display: inline; }
+.light-mode .icon-moon { display: block; }
 
 /* --- Sections --- */
 .section {
@@ -234,11 +234,19 @@ p {
 
 .hero-headline {
   font-family: var(--font-display);
-  font-size: clamp(2.2rem, 5.5vw, 3rem);
+  font-size: clamp(2.4rem, 5.5vw, 3.4rem);
   font-weight: 400;
-  line-height: 1.2;
-  max-width: 800px;
-  margin: 0 auto var(--space-md);
+  line-height: 1.15;
+  max-width: 700px;
+  margin: 0 auto 16px;
+}
+
+.hero-sub-gold {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  color: var(--gold);
+  margin-bottom: var(--space-md);
+  font-style: italic;
 }
 
 .gold {
@@ -246,11 +254,12 @@ p {
 }
 
 .hero-sub {
-  font-size: clamp(0.9rem, 1.8vw, 1.05rem);
+  font-size: clamp(0.8rem, 1.6vw, 0.95rem);
   color: var(--text-muted);
   margin-bottom: var(--space-xl);
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   font-weight: 300;
+  text-transform: uppercase;
 }
 
 /* VSL Placeholder */
